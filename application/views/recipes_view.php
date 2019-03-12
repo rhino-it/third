@@ -63,8 +63,8 @@
 			<div class="tab-pane fade" id="profile" role="tabpanel" aria-labelledby="price-tab">
 				<div class="padding">
 					<form>
-						<div class="row">
-						<div class="form-group col-md-6">
+						<div class="row justify-content-between no-gutters">
+						<div class="form-group col-md-5">
 							<label for="exampleFormControlSelect1">Выберите категорию анализа</label>
 							<select class="form-control" id="exampleFormControlSelect1" onchange="ajax(this.options[this.selectedIndex].value);">
 
@@ -77,24 +77,30 @@
 							</select>
 						</div>
 						 <div class="w-100"></div>
-						<div class="form-group col-md-6">
+						<div class="form-group col-md-5">
 							<label for="exampleFormControlSelect2">Выберите вид анализа</label>
-							<select size="6"  multiple class="form-control table_1_option" id="analys">
-								
-							</select>
+								<ul class="table_1_li" id="analys">
+									
+								</ul>
 						</div>
-						<div class="form-group col-md-6">
+
+						<div class="form-group col-md-1 text-center pt-5">
+							<p style=" margin-bottom: 0px; padding-top: 20px;"><i style="font-size: 2em;" class="fa fa-exchange"></i></p>
+						</div>
+						<div class="form-group col-md-5">
 							<label for="exampleFormControlSelect2">Выбранный вид анализа</label>
 							<select size="6" multiple class="form-control table_2_option" id="selected_analys">
-								
+
 							</select>
 						</div>
 						</div>
 				
 					<div class="row justify-content-end">
-						
 					    <div class="form-group col-md-6">
-					      <input type="text" hidden="" name="cena" value="250" id="result_summa_medicoment"></div>
+					    	<div id="result_summa_medicoment">
+					    		
+					    	</div>
+					    </div>
 					
 					</div>
 					

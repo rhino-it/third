@@ -638,6 +638,22 @@ ul {
 }
 /*END OF PRICE PAGE*/
 /*recipes*/
+
+    .table_1_option, .table_2_option{
+      overflow-y: auto;
+      overflow-x: none;
+      height: 10em;
+      display: block;
+      border: 1px solid #eee;
+      box-shadow: 0 0 5px 0 #000;
+      list-style: none;
+      padding: 10px;
+      transition: 0.3s;
+      margin: auto;
+    }
+    .table_1_option, .table_2_option li{ padding: 5px 10px; cursor: pointer;}
+    /*.table_1_option, .table_2_option li:hover{background-color: #44a; color: #fff;}*/
+
 .recipes {
   display: flex;
   justify-content: space-around;
