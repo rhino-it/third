@@ -1,8 +1,8 @@
 <?php 
-
+$i=0;
 foreach ($query_category as $item_category) {
 	?>
-	<li value="<?php echo $item_category['id'];  ?>"><?php echo $item_category['name'].'(';?>
+	<li id="pp<?php echo $i;?>" value="<?php echo $item_category['id'];  ?>"><?php echo $item_category['name'].'(';?>
 	<span>
 		<?php echo $item_category['price'];  ?>
 	</span>
@@ -11,6 +11,7 @@ foreach ($query_category as $item_category) {
 
 	
 	<?php 
+	$i++;
 } ?>
 <script type="text/javascript">
 	list();	

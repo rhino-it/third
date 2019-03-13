@@ -1,4 +1,4 @@
-// menu fixed t1_o
+// menu fixed t1_li
 $(document).ready(function($) {
     $nav = $('.fixed-div');
     $nav.css('width', $nav.outerWidth());
@@ -14,7 +14,7 @@ $(document).ready(function($) {
 });
 // menu fixed end
 
-// menu click pod_menu t1_o
+// menu click pod_menu t1_li
 var castle = false;
 if ($(window).width()<990) {
     castle = true;
@@ -36,21 +36,19 @@ if (castle==true) {
 
 // list medicoment start
 function list(){
-var t1_o = document.querySelectorAll('.table_1_li li');
+var t1_li = document.querySelectorAll('.table_1_li li');
 var table_1 = document.getElementById('analys');
 var table_2 = document.getElementById('selected_analys');
 var r_s_m = document.getElementById('result_summa_medicoment');
 var summa_medicoment = 0;
-for (var i = 0; i < t1_o.length; i++) {
-    t1_o[i].onclick = add_medicoment;
+for (var i = 0; i < t1_li.length; i++) {
+    t1_li[i].onclick = add_medicoment;
 }
 
 function add_medicoment() { 
-  console.log(this.children[0]);
-  this.classList.toggle('list_none');  
-  table_2.innerHTML += '<option value="'+this.value+'">'+this.children[0]+'</option>';
-
-  summa_medicoment=summa_medicoment+parseInt(this.children[0]);
+  this.className='list_none';  
+  table_2.innerHTML += '<option id="'+$(this).attr("id")+'" value="'+this.value+'">'+$(this).text()+'</option>';
+  summa_medicoment=summa_medicoment+parseInt($(this.children[0]).text());
   r_s_m.innerHTML = summa_medicoment;
   var t2_o = document.querySelectorAll('.table_2_option option');
   for (var i = 0; i < t2_o.length; i++) {
@@ -59,13 +57,18 @@ function add_medicoment() {
 }
 
 function remove_medicoment() {
-  this.classList.toggle('list_none');  
-  table_1.innerHTML += '<li>'+this.text+'</li>';
-  summa_medicoment=summa_medicoment-parseInt(this.childNodes[0].text);
-  r_s_m.innerHTML = summa_medicoment;
-  var t1_o = document.querySelectorAll('.table_1_option li');
-  for (var i = 0; i < t1_o.length; i++) {
-      t1_o[i].onclick = add_medicoment;
+  var t1_li = document.querySelectorAll('.table_1_li li');
+  for (var i = 0; i < t1_li.length; i++) {
+    if ($(t1_li[i]).attr("id") == $(this).attr("id")) {
+      t1_li[i].className='list_block';
+      summa_medicoment=summa_medicoment-parseInt($(t1_li[i].children[0]).text());
+      r_s_m.innerHTML = summa_medicoment;
+    }  
+  }
+  table_2.removeChild(this); 
+  var t1_li = document.querySelectorAll('.table_1_option li');
+  for (var i = 0; i < t1_li.length; i++) {
+      t1_li[i].onclick = add_medicoment;
   }
 }
 }
