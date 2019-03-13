@@ -40,7 +40,7 @@ var t1_li = document.querySelectorAll('.table_1_li li');
 var table_1 = document.getElementById('analys');
 var table_2 = document.getElementById('selected_analys');
 var r_s_m = document.getElementById('result_summa_medicoment');
-var summa_medicoment = 0;
+var summa_medicoment = parseInt($(r_s_m).text());
 for (var i = 0; i < t1_li.length; i++) {
     t1_li[i].onclick = add_medicoment;
 }
@@ -57,13 +57,18 @@ function add_medicoment() {
 }
 
 function remove_medicoment() {
+  var text1 = $(this).text();
+  var text2 = text1.match( /сом/i );
+  var text3 = text2.index;
+  var text_last = text1.lastIndexOf(' ', text3-2);
+  var text_price=text1.substr(text_last, text3);
   var t1_li = document.querySelectorAll('.table_1_li li');
   for (var i = 0; i < t1_li.length; i++) {
     if ($(t1_li[i]).attr("id") == $(this).attr("id")) {
       t1_li[i].className='list_block';
-      summa_medicoment=summa_medicoment-parseInt($(t1_li[i].children[0]).text());
+      summa_medicoment=summa_medicoment-parseInt(text_price);
       r_s_m.innerHTML = summa_medicoment;
-    }  
+    } 
   }
   table_2.removeChild(this); 
   var t1_li = document.querySelectorAll('.table_1_option li');
