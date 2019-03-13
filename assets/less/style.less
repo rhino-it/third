@@ -419,7 +419,7 @@ ul {
 }
 /*end menu*/
 /*CAROUSEL*/
-.img_carousel{
+.img_carousel {
   height: 500px;
   background-size: cover;
   background-repeat: no-repeat;
@@ -638,91 +638,6 @@ ul {
 }
 /*END OF PRICE PAGE*/
 /*recipes*/
-.recipes {
-  display: flex;
-  justify-content: space-around;
-  padding-bottom: 50px;
-  font-family: Calibri !important;
-}
-.sec1,
-.sec2,
-.sec3 {
-  flex: 1;
-  padding: 10px;
-}
-.sec1 select {
-  display: block;
-  width: 100%;
-  padding: 6px 12px;
-  border-radius: 3px;
-}
-.sec1 .scroll {
-  overflow: scroll;
-  width: 100%;
-  height: 250px;
-  padding: 5px;
-  border: 1px solid #aaa;
-  overflow-x: hidden;
-}
-// .sec1 .scroll table {
-//   width: 100%;
-// }
-// .sec1 .scroll table td {
-//   /*width: 50%;*/
-//   float: left;
-//   text-align: center;
-//   border-right: 2px solid skyblue;
-//   border-bottom: 2px solid skyblue;
-// }
-// .sec1 .scroll table td:first-child {
-//   width: 80%;
-// }
-// .sec1 .scroll table td:last-child {
-//   width: 20%;
-//   float: left;
-//   text-align: center;
-//   border-right: 2px solid skyblue;
-//   border-bottom: 2px solid skyblue;
-// }
-// /*.sec1 .scroll table td:first-child{
-//   width: 10%;
-//   text-align: left;
-// }
-// .sec1 .scroll table td:last-child{
-//   width: 10%;
-// }*/
-// .sec1 .scroll table td span {
-//   display: inline-block;
-//   padding-right: 20px;
-//   padding-left: 20px;
-//   font-family: Calibri;
-// }
-.sec1 .scroll span {
-  display: block;
-  font-size: 1.2em;
-  color: #555;
-}
-.sec1 .scroll input {
-  display: block;
-  width: 19px;
-  height: 19px;
-}
-.sec1 .scroll .sum {
-  color: #666;
-  font-weight: bold;
-}
-.sec1 .scroll h1 {
-  font-size: 1.5em;
-  color: #023384;
-  font-weight: bold;
-}
-.sec1 p {
-  padding: 15px 0px 5px 10px;
-  margin-bottom: 0;
-  font-weight: bold;
-  font-size: 1.2em;
-  color: #555;
-}
 .center-recipes {
   color: #333;
   text-align: center;
@@ -730,92 +645,41 @@ ul {
   font-weight: bold;
   font-family: Calibri;
 }
-.button a {
-  background: skyblue;
+.list_none {
+  display: none;
+}
+.list_block {
+  display: block;
+}
+.table_1_li, .table_2_option{
+  overflow-y: auto;
+  overflow-x: none;
+  display: block;
+  border: 1px solid #eee;
+  box-shadow: 0 0 5px 0 #000;
+  list-style: none;
+  // padding: 10px;
+  transition: 0.3s;
+  margin: auto;
+  height: 10em;
+  border: 0;
+}
+.table_1_li li{
+  padding: 5px 5px; 
+  cursor: pointer;
+} 
+.table_2_option option{ 
+  padding: 5px 5px; 
+  cursor: pointer;
+}
+.table_1_li li:hover{
+  background-color: #44a; 
   color: #fff;
-  padding: 5px;
-  border: none;
-}
-.button {
-  padding-top: 20px;
-  float: right;
-}
-.result-recipe {
-  position: relative;
-  padding: 20px 10px;
-  box-shadow: 0px 0px 8px #ccc;
-}
-.result-recipe h1 {
-  font-size: 1.3em;
-  color: #023372;
-  font-weight: bold;
-}
-// .sec2 table {
-//   width: 100%;
-// }
-// .sec2 .result-content table tr td {
-//   width: 45%;
-//   float: left;
-// }
-// .sec2 .result-content table tr td:first-child {
-//   width: 5%;
-//   text-align: left;
-// }
-// .sec2 .result-content table td {
-//   width: 40%;
-//   float: left;
-//   text-align: center;
-//   border-right: 2px solid skyblue;
-//   border-bottom: 2px solid skyblue;
-// }
-.result-content {
-  padding: 10px 0;
-  margin: 10px 0;
-  border-top: 1px dotted #ccc;
-  border-bottom: 1px dotted #ccc;
-  overflow: scroll;
-  height: 150px;
-  overflow-x: hidden;
-}
-// .total table {
-//   width: 100%;
-//   font-size: 1.3em;
-// }
-// .total .tab {
-//   text-align: left;
-// }
-// .total th {
-//   text-align: right;
-//   padding-top: 10px;
-// }
-.total button {
-  background: #023372;
+} 
+.table_2_option option:hover{ 
+  background-color: #44a; 
   color: #fff;
-  border: 0px;
-  padding: 6px 13px;
 }
-
-
-      // erjan start
-
-.list{
-  border-bottom: 2px solid skyblue;
-  text-align: center;
-  padding: 5px 0;
-  .row{
-    margin: 0;
-  }
-  .list_name{
-    float: left;
-    width: 80%;
-  }
-  .list_price{
-    float: left;
-    width: 20%;
-  }
-}
-
-      // erjan end
 /*recipse end*/
 /*doctors*/
 .doctor {
@@ -1028,9 +892,3 @@ ul {
   padding-top: 10px;
 }
 /*Kozhomkul ends*/
-.list_none{
-  display: none;
-}
-.list_block{
-  display: block;
-}
