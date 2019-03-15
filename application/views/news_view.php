@@ -1,6 +1,6 @@
 <div class="content">
 	<div class="container">
-		<h2 class="service">Новости <a href="<?php echo base_url('pages/arhiv');?>">Архив <i class="fa fa-arrow-right"></i></a></h2>
+		<h2 class="service">Новости <a href="<?php echo base_url('index.php/pages/arhiv');?>">Архив <i class="fa fa-arrow-right"></i></a></h2>
 		<div class="row news">
 			<?php 
 			foreach ($main_page_news as $news):
@@ -8,7 +8,7 @@
 				<div class="col-md-4">
 					<?php
 						echo '<a href="';
-						if($news['url']==false) {echo base_url('pages/page/').$news['id'];}
+						if($news['url']==false) {echo base_url('index.php/pages/page/').$news['id'];}
 						else {echo $news['url'];} echo '">'?>
 							<div class="news-block">
 						<div class="news-img" style="">

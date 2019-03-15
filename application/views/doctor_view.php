@@ -1,7 +1,7 @@
 	<div class="container">
 		<div class="doctor">
 			<div class="left">
-				<img src="<?php echo base_url().'assets/files/6.jpeg'; ?>" alt="">
+				<img src="<?php echo base_url().'index.php/assets/files/6.jpeg'; ?>" alt="">
 				<div class="bor">
 					Должность
 				</div>

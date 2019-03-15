@@ -3,7 +3,7 @@
 		<div class="row text_box">
 			<div class="col-md-6">
 				<div class="text_block-img">
-					<img src="<?php echo base_url().'assets/files/4.jpg'; ?>" alt="">
+					<img src="<?php echo base_url().'index.php/assets/files/4.jpg'; ?>" alt="">
 				</div>
 			</div>
 			<div class="col-md-5">

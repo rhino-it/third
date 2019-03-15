@@ -8,7 +8,7 @@
 				<div class="col-md-4">
 					<?php
 						echo '<a href="';
-						if($ar['url']==false) {echo base_url('pages/page/').$ar['id'];}
+						if($ar['url']==false) {echo base_url('index.php/pages/page/').$ar['id'];}
 						else {echo $ar['url'];} echo '">'?>
 							<div class="news-block">
 						<div class="news-img" style="">

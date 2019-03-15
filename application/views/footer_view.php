@@ -115,7 +115,7 @@
 						function ajax(id)
 						{
 							$.ajax({
-								url: BASE_URL + 'ajax/category/'+id,
+								url: BASE_URL + 'index.php/ajax/category/'+id,
 								success: function (data) {
 									$('#analys').html(data);
 								}
