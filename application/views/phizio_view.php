@@ -7,7 +7,7 @@
 				<div class="col-md-12">
 					<div class="row">
 						<div class="col-md-5">
-							<div class="main_img" style="background-image:url('<?php echo base_url().'assets/files/medic/врач-узист.jpeg';?>files/8.jpg')">
+							<div class="main_img" style="background-image:url('<?php echo base_url().'index.php/assets/files/medic/врач-узист.jpeg';?>files/8.jpg')">
 								<img src="../../assets/files/8.jpg" alt="">
 							</div>
 						</div>

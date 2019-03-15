@@ -80,11 +80,11 @@ function remove_medicoment() {
 // list medicoment end
 
 
-
+// results show start
   function showOrHide(cb, cat) {
     cb = document.getElementById(cb);
     cat = document.getElementById(cat);
-    if (cb.checked) cat.style.display = "block";
+    if (cb.checked) cat.style.display = "inline-block";
     else cat.style.display = "none";
   }
 
@@ -100,3 +100,7 @@ function remove_medicoment() {
 
  });
 })
+// results show end
+
+delete_text = document.getElementById(text);
+delete_text.style.display='none';  

@@ -18,19 +18,19 @@
 						<div class="carousel-item active">
 							<div class="img_carousel" style="background-image: url('<?php echo base_url(); ?>assets/images/slider/1.jpg');"></div>
 	 						<div class="carousel-caption">
-								<h3>Здоровый ребенек - счастливая семья !</h3>
+								<h3><b>Профессиональная забота о Вашем здоровье</b></h3>
 							</div>
 						</div>
 						<div class="carousel-item">
-							<div class="img_carousel" style="background-image: url('<?php echo base_url(); ?>assets/images/slider/2.jpg');"></div>
+							<div class="img_carousel" style="background-image: url('<?php echo base_url(); ?>assets/images/slider/2.JPG');"></div>
 							<div class="carousel-caption">
-								<h3>Мы за здоровый образ жизни !</h3>
+								<h3><b>Высокоточная диагностика по японским технологиям</b></h3>
 							</div>
 						</div>
 						<div class="carousel-item">
 							<div class="img_carousel" style="background-image: url('<?php echo base_url(); ?>assets/images/slider/3.jpg');"></div>
 							<div class="carousel-caption">
-								<h3>Правильное питание это не диета !</h3>							
+								<h3><b>Инновационно-интеграционные подходы в обучении</b></h3>							
 							</div>
 						</div>
 					</div>

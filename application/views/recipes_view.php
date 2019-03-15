@@ -89,18 +89,22 @@
 						</div>
 						<div class="form-group col-md-5">
 							<label for="exampleFormControlSelect2">Выбранный вид анализа</label>
-							<select multiple class="form-control table_2_option" id="selected_analys">
+							<select size="5" multiple class="form-control table_2_option" id="selected_analys">
 
 							</select>
 						</div>
 						</div>
 				
 					<div class="row justify-content-end">
-					    <div class="form-group col-md-6">
+					    <div class="form-group col-md-5">
+					    	<div class="justify-content-end">
+					  
 					    	<div id="result_summa_medicoment">
 					    		0
 					    	</div>
+					 
 					    </div>
+					  </div>
 					
 					</div>
 					

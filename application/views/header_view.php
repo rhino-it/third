@@ -1,4 +1,4 @@
-<body>
+﻿<body>
 	<div class="header">
 		<div class="top">
 			<div class="container">
@@ -11,8 +11,8 @@
 					</div>
 					<div class="col-xs-12 col-sm-6 ">
 						<div class="rightline">
-							<a href="<?php echo base_url().'Pages/recipes'; ?>">Сдать анализ</a>
-							<a href="<?php echo base_url().'Pages/results'; ?>">Получить результат</a>
+							<a href="<?php echo base_url().'index.php/Pages/recipes'; ?>">Сдать анализ</a>
+							<a href="<?php echo base_url().'index.php/Pages/results'; ?>">Получить результат</a>
 							<a href="" data-toggle="modal" data-target="#loginmodal" class="register">вход</a>
 						</div>
 					</div>

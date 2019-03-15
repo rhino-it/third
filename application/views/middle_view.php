@@ -7,7 +7,7 @@
 				?>
 							<div class="col-sm-6 col-md-4">
 								<div class="radius">			
-									<a href="<?php echo base_url('pages/uslugi_detail/'.$us['id']); ?>" class="obertka">
+									<a href="<?php echo base_url('index.php/pages/uslugi_detail/'.$us['id']); ?>" class="obertka">
 										<div class="framepicture">
 											<div class="picture" style="background-image: url('<?php echo base_url().$us['foto']?>');"></div>
 										</div>
