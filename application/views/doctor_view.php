@@ -1,13 +1,17 @@
 	<div class="container">
 		<div class="doctor">
+			<?php 
+				foreach ($doctor_collective as $d_c) {
+			?>
 			<div class="left">
-				<img src="<?php echo base_url().'index.php/assets/files/6.jpeg'; ?>" alt="">
+				<img src="<?php echo base_url().'index.php/'.$d_c['foto']; ?>" alt="">
 				<div class="bor">
-					Должность
+					<?php echo $d_c['tema_kg'] ?>
 				</div>
 			</div>
 			<div class="right">
-				Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repellendus labore doloremque laborum cum praesentium quod necessitatibus sunt consequuntur nam soluta autem aliquam laudantium neque, fuga quisquam expedita, maxime totam, dolorem.
-			</div>
+				<?php echo $d_c['page_text_ru'] ?>
+			</div>orem.
+		<?php } ?>
 		</div>		
 	</div>
